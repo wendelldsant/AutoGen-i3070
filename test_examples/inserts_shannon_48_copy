@@ -1,0 +1,39 @@
+------------------------------------------------------------------------------
+AGILENT ICT FIXTURE INSERTION REPORT       Tue Oct  1 23:03:20 2024      
+
+C:/Agilent_ICT/boards/cisco/shannon_48_cr2-c9300l/fixture/inserts
+------------------------------------------------------------------------------
+
+Fixture Type : Agilent SimPlate Express
+Fixture Size : Full
+Fixture Part Number : 44200L
+Top Probes Allowed : Enabled
+Autofile : 4094
+Units : English
+Wiring Method : Manual
+-----------------------------------------------------------------------------
+(b   r      c )     X       Y     Type   Spring Node Name  On Device
+---------------|---------------|--------|------|----------|---------------------
+(1 23.00  50.0)  204111   72275   Pin             Extra   
+(1 23.00  49.0)  205611   72275   Pin             Extra   
+
+
+Page 2
+------------------------------------------------------------------------------
+AGILENT ICT FIXTURE INSERTION REPORT       Tue Oct  1 23:03:20 2024      
+
+C:/Agilent_ICT/boards/cisco/shannon_48_cr2-c9300l/fixture/inserts
+------------------------------------------------------------------------------
+
+(b   r      c )     X       Y     Type   Spring Node Name  On Device
+---------------|---------------|--------|------|----------|---------------------
+
+[2 21.88  14.5]  114913  -64445  75 mil   4 oz  P17_ICM_VCC j30.F9
+[2 22.17  14.5]  114913  -66445  75 mil   4 oz  P17_MDI2_N j30.F5 
+
+[1 07.54  73.2]  169386   35955  50 mil   4 oz  RAM0_CORE_MON_A_P tp106.1
+[1 07.61  73.2]  169386   35435  50 mil   4 oz  RAM0_CORE_MON_B_P tp109.1
+[1 07.61  73.2]  169386   35435  50 mil   4 oz  RAM0_CORE_MON_B_P tp109.1
+
+(2 10.28  01.1)  134936  -16770 Transfer          OTHER   
+(2 10.28  00.1)  136436  -16770 Transfer          OTHER     
