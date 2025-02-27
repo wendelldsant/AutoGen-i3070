@@ -1,0 +1,164 @@
+------------------------------------------------------------------------------
+AGILENT ICT FIXTURE TRACE REPORT           Tue Oct  1 23:03:20 2024      
+
+C:/Agilent_ICT/boards/cisco/shannon_48_cr2-c9300l/fixture/trace
+------------------------------------------------------------------------------
+
+Fixture Type : Agilent SimPlate Express
+Fixture Size : Full
+Fixture Part Number : 44200L
+Top Probes Allowed : Enabled
+Autofile : 4094
+Units : English
+Wiring Method : Manual
+-----------------------------------------------------------------------------
+    ( Pin )   [ Probe ]    Length = in.
+-----------------------------------------------------------------------------
+Node Name    "Node Name"
+Probe[Top]   [b rr.rr  cc.c]  On Device.Pin
+Alternate    On Device.Pin
+Wire         Color: "Color"    Gauge: "Gauge"
+ Path        (b rr.rr  cc.c) <Length> (b rr.rr  cc.c) <Length> [b rr.rr  cc.c]
+ Use         "Use"
+
+-----------------------------------------------------------------------------
+Node Name    12V_REF_1
+Probe        [2 13.61  00.3]  On Device: j6.4
+Wire         Color: Blue       Gauge: 28
+ Path        (2 21.50  72.0) <13.0> [2 13.61  00.3]
+ Use         Shorts Test  ASRU Detector   G Bus Sense  
+
+-----------------------------------------------------------------------------
+Node Name    12V_REF_2
+Probe        [2 13.46  00.3]  On Device: j6.2
+Wire         Color: Blue       Gauge: 28
+ Path        (2 14.00  73.0) <12.0> [2 13.46  00.3]
+ Use         Shorts Test  ASRU Detector   G Bus Sense  
+
+-----------------------------------------------------------------------------
+Node Name    33M_BUF1_EN
+Probe        [1 12.82  51.3]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 19.50  13.0) <8.0> [1 12.82  51.3]
+ Use         Digital Drv.   Shorts Test 
+
+ Path        (2 14.39  07.0) <8.0> [1 12.82  51.3]
+ Use         ASRU Detector  
+
+-----------------------------------------------------------------------------
+Node Name    _d_U73_BJ4
+Probe        [1 15.85  69.8]
+Wire         Color: Blue       Gauge: 30
+ Path        (1 12.36  70.0) <3.0> [1 15.85  69.8]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+
+Page 2
+------------------------------------------------------------------------------
+AGILENT ICT FIXTURE TRACE REPORT           Tue Oct  1 23:03:20 2024      
+
+C:/Agilent_ICT/boards/cisco/shannon_48_cr2-c9300l/fixture/trace
+------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Node Name    _d_U104_16
+Probe        [1 14.00  63.5]
+Wire         Color: Blue       Gauge: 30
+ Path        (1 13.50  50.0) <2.5> [1 14.00  63.5]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    _d_URAMAN0_AD38
+Probe        [1 08.17  57.1]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 14.00  37.0) <5.5> [1 08.17  57.1]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    _d_URAMAN0_AF36
+Probe        [1 08.29  60.6]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 13.50  38.0) <5.5> [1 08.29  60.6]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    _d_URAMAN0_AF38
+Probe        [1 08.28  57.1]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 14.00  38.0) <5.5> [1 08.28  57.1]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    _d_URAMAN0_AG38
+Probe        [1 08.35  60.0]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 13.00  49.0) <4.0> [1 08.35  60.0]
+ Use         Digital Rcv.   Digital Drv.   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    ACT2_PUD_U1_3_3X
+Probe        [1 12.08  65.3]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 20.50  26.0) <9.0> [1 12.08  65.3]
+ Use         Digital Drv.   ASRU Detector   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    ACT2_PUD_U1_14_4X
+Probe        [1 12.24  65.4]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 21.00  25.0) <9.0> [1 12.24  65.4]
+ Use         Digital Drv.   ASRU Detector   Shorts Test 
+
+
+Page 3
+------------------------------------------------------------------------------
+AGILENT ICT FIXTURE TRACE REPORT           Tue Oct  1 23:03:20 2024      
+
+C:/Agilent_ICT/boards/cisco/shannon_48_cr2-c9300l/fixture/trace
+------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Node Name    ACT2_RST_L
+Probe        [1 12.03  64.3]
+Wire         Color: Blue       Gauge: 28
+ Path        (1 19.00  41.0) <6.5> [1 12.03  64.3]
+ Use         Digital Drv.   Shorts Test  ASRU Detector  
+
+ Path        (2 09.00  28.0) <10.0> [1 12.03  64.3]
+ Use         ASRU Source  
+
+-----------------------------------------------------------------------------
+Node Name    ACT2_RST_SRT_L
+Probe        [1 11.41  59.9]
+Wire         Color: Blue       Gauge: 30
+ Path        (2 10.50  28.0) <10.0> [1 11.41  59.9]
+ Use         ASRU Detector   Shorts Test 
+
+-----------------------------------------------------------------------------
+Node Name    AGND_SBC_3P3V
+Probe        [1 10.93  78.6]
+Wire         Color: Blue       Gauge: 30
+ Path        (2 08.00  21.0) <6.5> [1 10.93  78.6]
+ Use         ASRU Source  
+
+ Path        (1 14.50  09.0) <18.0> (2 08.00  21.0) <6.5> [1 10.93  78.6]
+ Use         ASRU Source   Shorts Test  Analog Guard  
+
+-----------------------------------------------------------------------------
+Node Name    AUTOFILE
+Pin          (2 18.00  78.0)
+Wire         Color: Black      Gauge: 28
+ Path        (2 18.00  67.0) <1.0> (2 18.00  68.0) <1.0> (2 18.00  69.0)
+               <1.0> (2 18.00  70.0) <1.0> (2 18.00  71.0) <1.0> (2 18.00  72.0)
+               <1.0> (2 18.00  73.0) <1.0> (2 18.00  74.0) <1.0> (2 18.00  75.0)
+               <1.0> (2 18.00  76.0) <1.0> (2 18.00  77.0) <1.0> (2 18.00  78.0)
+ Use         Autofile   Ground  
+
+-----------------------------------------------------------------------------
+Node Name    BOARD_ID_0
+Probe        [1 12.13  61.1]
+Wire         Color: Blue       Gauge: 30
+ Path        (1 22.00  06.0) <12.0> [1 12.13  61.1]
+ Use         ASRU Detector   Shorts Test  Analog Guard  
+
+
