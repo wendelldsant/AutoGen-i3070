@@ -19,3 +19,11 @@ def read_file(file_path):
         except FileNotFoundError:
             input(f"Erro na leitura. Verifique o diretório.")
         
+def get_number(prompt_text):
+    while True:
+        number = input(prompt_text) 
+        try:
+            return float(number)
+        except ValueError:
+            print(f"Erro: Digite um número.")
+        
