@@ -1,0 +1,20 @@
+!!!!    9    0    1 1730749543   0000                                         
+!IPG: rev 08.30p  Fri Oct 11 00:11:10 2024
+report common devices
+settling delay 50.00u
+!! Start of Section 2
+threshold        8
+nodes "_d_U73_BJ4"
+nodes "GND"
+nodes "_d_URAMAN0_AD38"
+nodes "_d_URAMAN0_AF36"
+nodes "_d_URAMAN0_AF38"
+nodes "ISO_JTAG_TMS"
+!nodes "ACC_USB3_SSDCON_TXD_N"     ! Node not accessible
+!nodes "ACC_USB3_SSDCON_TXD_P"     ! Node not accessible
+nodes "BUF_CLK_IN"
+!nodes "CLK_100M_RAM0_PCIE_ACC_N"     ! Node not accessible
+!nodes "CLK_100M_RAM0_PCIE_N"     ! Node not accessible
+nodes "CLK_100M_RAM0_PCIE_SRT_N"
+!nodes "CLK_100M_RAM0_PCIE_P"     ! Node not accessible
+

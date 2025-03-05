@@ -1,0 +1,15 @@
+!!!!   16    0    1 1732830612   0000                                         
+!IPG: rev 08.30p  Thu Nov 26 17:09:51 2020
+
+nodes "GND"
+nodes "BUFFER_MFG_JTAG_TCK_4"
+nodes "BUFFER_MFG_JTAG_TMS_2"
+nodes "ISO_JTAG_CONN_TDO_FPGA_TDI"
+nodes "ISO_JTAG_TCLK"
+nodes "ISO_JTAG_TMS"
+nodes "ISO_SRT_JTAG_FPGA_TDO"
+nodes "JTAG_CPU_TDO_PCH_TDI"
+nodes "JTAG_MGMT_PHY_TDO_SRT"
+nodes "JTAG_PCH_TCK"
+nodes "JTAG_PCH_TMS"
+!nodes "JTAG_PHY0_1_2_TMS" !COMENTARIO

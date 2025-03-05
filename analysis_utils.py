@@ -52,4 +52,13 @@ def inserts_filtered(inserts_path):
                 result.append(node_info)
     return result
         
-                    
+def shortslong(pinslong_path, shortsplate_path):
+    pinslong = io.read_file(pinslong_path)
+    shortsplate = io.read_file(shortsplate_path)
+    pinslong_filtered = [node[1].replace('"', "") for node in pinslong if len(node) > 0 and node[0]=="nodes"]
+    shortsplate_filtered = [node[1].replace('"', "") for node in shortsplate if len(node) > 0 and node[0]=="nodes"]
+    result = [node for node in shortsplate_filtered if not node in pinslong_filtered]
+    return result
+
+pinslong_path = "./test_examples/pinslong_shannon_48"
+shortsplate_path = "./test_examples/shortsplate"
