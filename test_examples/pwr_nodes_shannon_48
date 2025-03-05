@@ -1,0 +1,227 @@
+!!!!    2    0    1 1633377452   0000                                         
+test powered analog
+
+  test "ISO_54N_RET"         !OK 
+  test "ISO_1_2V"            !OK
+  test "ISO_IBC_54N_RET"     !OK
+  test "SP_3_3V"             !OK      
+  test "P0_6V_DDR4_0_VTT"    !OK
+  test "P1V"                 !OK
+  test "P1_05V"              !OK
+  test "P1_2V"               !OK
+  test "P1_2VDDQ"            !OK
+  test "P1_3V"               !OK  
+  test "P1_5V"               !OK
+  test "P1_7V"               !OK
+  test "P1_8V"               !OK
+  test "P1_8V_CORE"          !OK 
+  test "P2_5V"               !OK
+  test "P3_3V"               !OK
+  test "P5V"                 !OK
+  test "P5V_USB"             !OK
+!# test "P5V_USB_OUT"
+  test "V3P3_SLEW"           !OK
+  test "V_IBC_8_1V"          !OK
+  test "RAMAN_0_9V"          !OK
+  test "RAMAN0_0_81V"        !OK  
+  test "P2_5V_FPGA"          !OK
+  test "P1_5V_CPU"           !OK 
+
+end test
+
+subtest "ISO_54N_RET"
+  connect i to nodes "ISO_54N_RET"
+  connect l to nodes "ISO_54N"
+  detector dcv, expect 54
+  measure  54.5, 53.0
+end subtest
+
+subtest "ISO_REF_5V"
+  connect i to nodes "ISO_REF_5V"
+  connect l to nodes "ISO_54N_RET"     ! GND
+  detector dcv, expect 5
+  measure  5.5, 4.5
+end subtest
+
+subtest "LDO_1P5V_ENABLE"
+  connect i to nodes "LDO_1P5V_ENABLE"
+  connect l to ground
+  detector dcv, expect 3.3
+  measure  3.6, 3.0
+end subtest
+
+subtest "ISO_1_2V"
+  connect i to nodes "ISO_1_2V"
+  connect l to nodes "ISO_54N"
+  detector dcv, expect 54
+  measure  1.26, 1.14
+end subtest
+
+subtest "ISO_54N_4P096"
+  connect i to nodes "ISO_54N_4P096"
+  connect l to nodes "ISO_54N"
+  detector dcv, expect 4.096
+  measure  4.4, 3.8
+end subtest
+
+subtest "ISO_IBC_54N_RET"
+  connect i to nodes "ISO_IBC_54N_RET"
+  connect l to nodes "ISO_54N"
+  detector dcv, expect 54
+  measure  56.7, 51.3
+end subtest
+
+subtest "SP_3_3V"
+  connect i to nodes "SP_3_3V"
+  connect l to nodes "ISO_54N"
+  detector dcv, expect 54
+  measure  3.465, 3.135
+end subtest
+
+subtest "P0_6V_DDR4_0_VTT"
+  connect i to nodes "P0_6V_DDR4_0_VTT"
+  connect l to ground      ! GND
+  detector dcv, expect 0.6
+  measure  0.66, 0.54
+end subtest
+
+subtest "P1V"
+  connect i to nodes "P1V"
+  connect l to ground      ! GND
+  detector dcv, expect 1
+  measure  1.1, 0.9
+end subtest
+
+subtest "P1_05V"
+  connect i to nodes "P1_05V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.05
+  measure  1.155, 0.945
+end subtest
+
+subtest "P1_2V"
+  connect i to nodes "P1_2V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.2
+  measure  1.26, 1.14
+end subtest
+
+subtest "P1_2VDDQ"
+  connect i to nodes "P1_2VDDQ"
+  connect l to ground      ! GND
+  detector dcv, expect 1.2
+  measure  1.26, 1.14
+end subtest
+
+subtest "P1_3V"
+  connect i to nodes "P1_3V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.3
+  measure  1.365, 1.235
+end subtest
+
+subtest "P1_5V"
+  connect i to nodes "P1_5V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.5
+  measure  1.575, 1.425
+end subtest
+
+subtest "P1_7V"
+  connect i to nodes "P1_7V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.7
+  measure  1.785, 1.615
+end subtest
+
+subtest "P1_8V"
+  connect i to nodes "P1_8V"
+  connect l to ground      ! GND
+  detector dcv, expect 1.8
+  measure  1.89, 1.71
+end subtest
+
+subtest "P1_8V_CORE"
+  connect i to nodes "P1_8V_CORE"
+  connect l to ground      ! GND
+  detector dcv, expect 1.8
+  measure  1.89, 1.65
+end subtest
+
+subtest "P2_5V"
+  connect i to nodes "P2_5V"
+  connect l to ground      ! GND
+  detector dcv, expect 2.5
+  measure  2.625, 2.375
+end subtest
+
+subtest "P3_3V"
+  connect i to nodes "P3_3V"
+  connect l to ground      ! GND
+  detector dcv, expect 3.3
+  measure  3.465, 3.135
+end subtest
+
+subtest "P5V"
+  connect i to nodes "P5V"
+  connect l to ground      ! GND
+  detector dcv, expect 5
+  measure  5.25, 4.75
+end subtest
+
+subtest "P5V_USB"
+  connect i to nodes "P5V_USB"
+  connect l to ground      ! GND
+  detector dcv, expect 5
+  measure  5.25, 4.75
+end subtest
+
+subtest "P5V_USB_OUT"
+  connect i to nodes "P5V_USB_OUT"
+  connect l to ground      ! GND
+  detector dcv, expect 5
+  measure  5.25, 4.65
+end subtest
+
+subtest "V3P3_SLEW"
+  connect i to nodes "V3P3_SLEW"
+  connect l to ground      ! GND
+  detector dcv, expect 3.3
+  measure  3.465, 3.135
+end subtest
+
+subtest "V_IBC_8_1V"
+  connect i to nodes "V_IBC_8_1V"
+  connect l to   ground    ! GND
+  detector dcv, expect 8.1
+  measure  8.505, 7.695
+end subtest
+
+subtest "RAMAN0_0_81V"
+  connect i to nodes "RAMAN0_0_81V"
+  connect l to   ground    ! GND
+  detector dcv, expect 0.8
+  measure  850m, 750m
+end subtest
+
+subtest "RAMAN_0_9V"
+  connect i to nodes "RAMAN_0_9V"
+  connect l to   ground    ! GND
+  detector dcv, expect 0.9
+  measure  950m, 850m
+end subtest
+
+subtest "P2_5V_FPGA"
+  connect i to nodes "P2_5V_FPGA"
+  connect l to   ground    ! GND
+  detector dcv, expect 2.77
+  measure  3.2, 2.4
+end subtest
+
+subtest "P1_5V_CPU"
+  connect i to nodes "P1_5V_CPU"
+  connect l to   ground    ! GND
+  detector dcv, expect 1.5
+  measure  2.0, 1.0
+end subtest
+
