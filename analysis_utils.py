@@ -1,8 +1,8 @@
 import io_utils as io
 
-def wires_filtered(wire_path):
+def wires_filtered():
     result = []
-    wires = io.read_file(wire_path)
+    wires = io.read_file(file_type="wires")
     if wires:
         key_word = "Pin"
         for line in wires:
@@ -23,9 +23,9 @@ def wires_filtered(wire_path):
     result.pop(0)
     return result
 
-def inserts_filtered(inserts_path):
+def inserts_filtered():
     result = []
-    inserts = io.read_file(inserts_path) 
+    inserts = io.read_file(file_type="inserts") 
     key_words_list = ["Pin", "mil", "Transfer"] # Palavras chaves para serem buscadas em cada linha
     for line in inserts:
         node_info = {}

@@ -1,3 +1,4 @@
+import os
 example_trace = "../test_examples/trace_shannon_48"
 
 def display_options(prompt_text, options_list):
@@ -8,16 +9,18 @@ def display_options(prompt_text, options_list):
         print(formatted_option)
     return options_numbers
     
-def read_file(file_path):
+def read_file(file_type):
     retry = True
     while retry:
-        # file_path = input(f"Digite o caminho do arquivo {file_type} ou arraste para cá: ")
+        os.system('cls')
+        file_path = input(f"Digite o caminho do arquivo {file_type} ou arraste para cá: ")
         try:
             with open(file_path, "r") as file:
                 lines = [line.split() for line in file.readlines()]
                 return lines
         except FileNotFoundError:
-            input(f"Erro na leitura. Verifique o diretório.")
+            input(f"Erro na leitura. Verifique o diretório.\n"
+                  f"Pressione Enter para tentar novamente...")
         
 def get_number(prompt_text):
     while True:
