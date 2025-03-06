@@ -21,7 +21,7 @@ def power_nodes(powers_list_path, inserts_path):
     tolerance = io.get_number("Digite a tolerância padrão: ")
     for line in powers_list:
         power = line[0]
-        test_line = f'!test "{power}"  !NODE_NOT_FOUND'
+        test_line = f'!test "{power}"  !NODE NOT FOUND'
         for node in inserts:
             if node["Node_Name"] == power:
                 test_line = f'test "{power}"'
@@ -32,13 +32,22 @@ def power_nodes(powers_list_path, inserts_path):
             connect i to nodes "{power}"
             connect l to nodes ground
             detector dcv, expect {voltage}
-            measure  {voltage + tolerance}, {voltage - tolerance}
+            measure  {voltage + tolerance:.2f}, {voltage - tolerance:.2f}
         end subtest
         """
-        test_info = (power, test_line, subtest)
+        test_info = {
+            "Node_name": power,
+            "Voltage": voltage,
+            "Test": test_line, 
+            "Subtest": subtest
+            }
         result.append(test_info)
     return result
 
-power_list = "./test_examples/nodes_list_pwr_nodes"
-inserts = "./test_examples/inserts_shannon_48"
-    
+def shortslong(pinslong_path, shortsplate_path):
+    pinslong = io.read_file(pinslong_path)
+    shortsplate = io.read_file(shortsplate_path)
+    pinslong_filtered = [node[1].replace('"', "") for node in pinslong if len(node) > 0 and node[0]=="nodes"]
+    shortsplate_filtered = [node[1].replace('"', "") for node in shortsplate if len(node) > 0 and node[0]=="nodes"]
+    result = [node for node in shortsplate_filtered if not node in pinslong_filtered]
+    return result
